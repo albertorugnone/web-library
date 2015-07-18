@@ -21,7 +21,9 @@
     "underscore": "~1.8.3",
     "ui-ladda": "*",
     "bootstrap": "~3.3.5",
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
+    "angular-bootstrap": "~0.13.0",
+    "ladda-bootstrap": "~0.1.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.3"

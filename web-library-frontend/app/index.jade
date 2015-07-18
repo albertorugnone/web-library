@@ -1,0 +1,26 @@
+doctype html
+html(lang='en', ng-app='library')
+    head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      meta(name='description', content='Web Library')
+      meta(name='author', content='Alberto Rugnone')
+      title
+        | The Coolest Library
+      //link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700', rel='stylesheet', type='text/css')
+      link(href='css/library.css?v=#{version}', rel='stylesheet', media="screen")
+      link(href='css/lib.css?v=#{version}', rel='stylesheet')
+
+    body.library(ng-class="{ 'firefox': isFirefox, 'ie': isIE }")
+      .template-container(ui-view="template")
+      div(growl)
+
+      script(src='js/lib.js?v=#{version}')
+      script(src='js/templates.js?v=#{version}')
+      script(src='js/app.js?v=#{version}')
+
+      test
+        | it works!
+    //- HTML comment is needed for jade variable interpolation
+    <!--### FE-v#{version} ###-->
