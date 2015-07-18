@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "/Users/albertorugnone/Dev/ducati-ndcs-youtech-frontend"
 		}
 	]
 }
