@@ -1,6 +1,7 @@
 class Library extends App then constructor: -> return [
   'ui.router'
   'templates'
+  'library.login'
 ]
 
 class LibraryRunner extends Run
@@ -34,6 +35,7 @@ class LibraryConfiguration extends Config
         url: '/login'
         views:
           'template':
+            controller: 'LibraryLogin'
             templateUrl: 'components/login/login.html'
 
       .state 'catalog',
@@ -43,9 +45,9 @@ class LibraryConfiguration extends Config
             templateUrl: 'components/catalog/catalog.html'
 
 
-class LibraryLiInit extends Controller
-  constructor: () ->
-    alert "it works"
+class LibraryInit extends Controller
+  constructor: ($log) ->
+    $log "[LibraryInit] : Library application starting"
 
 # Util factory
 class LibraryFactory extends Factory then constructor: ($log) ->
