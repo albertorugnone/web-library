@@ -3,7 +3,7 @@ var express = require('express');
 var router = express.Router();
 
 
-router.get('/v1/authors', function(req, res, next) {
+router.get('v1/authors', function(req, res, next) {
     var authors = [
         {
             "name": "Mario Rossi",

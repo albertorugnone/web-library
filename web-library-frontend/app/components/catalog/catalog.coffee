@@ -33,7 +33,7 @@ class LibraryCatalog extends Controller
 class CatalogResources extends Factory then constructor: ($log, $http) ->
   factory = {
     loadAuthors: (scope) ->
-      $http.get('/v1/authors').then (resp) ->
+      $http.get('v1/authors').then (resp) ->
         resp.data
   }
 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<xs:element name="author">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string"></xs:element>
+				<xs:element name="id" type="xs:string"></xs:element>
+				<xs:element name="nickname" type="xs:string"></xs:element>
+				<xs:element name="age" type="xs:string"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="book">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="author"></xs:element>
+				<xs:element name="title" type="xs:string"></xs:element>
+				<xs:element name="year" type="xs:string"></xs:element>
+				<xs:element name="pages" type="xs:string"></xs:element>
+				<xs:element name="price" type="xs:string"></xs:element>
+				<xs:element name="discount" type="xs:string"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

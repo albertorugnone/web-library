@@ -48,6 +48,7 @@ paths =
       './app/**/*.jade'
   ]
   index     : ['./app/index.jade']
+  dist      : ['../web-library-b/src/main/webapp/']
 #i18n is not enabled
 #    i18n:[
 #      './bower_components/angular-i18n/angular-locale*it-it*',
@@ -215,6 +216,10 @@ gulp.task 'commons', [
   'img',
   'fonts',
   'watch'
+]
+
+gulp.task 'prod', [
+
 ]
 
 gulp.task 'default', ['commons', 'connect']
