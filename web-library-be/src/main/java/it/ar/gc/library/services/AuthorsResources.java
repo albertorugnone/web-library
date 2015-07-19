@@ -45,6 +45,9 @@ public class AuthorsResources {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   public Collection<Author> getAuthors() {
+    if (this.authors == null) {
+      throw new NotFoundException();
+    }
     return this.authors.values();
   }
 
