@@ -51,8 +51,5 @@ class LibraryInit extends Controller
   constructor: ($log) ->
     $log "[LibraryInit] : Library application starting"
 
-# Util factory
-class LibraryFactory extends Factory then constructor: ($log) ->
-  factory = {}
-  return factory
+
 

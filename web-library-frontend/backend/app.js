@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/catalog', catalog);
+app.use('/', catalog);
 app.use('/login', login);
 
 /// catch 404 and forward to error handler
