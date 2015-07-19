@@ -2,6 +2,7 @@ class Library extends App then constructor: -> return [
   'ui.router'
   'templates'
   'library.login'
+  'library.catalog'
 ]
 
 class LibraryRunner extends Run
