@@ -1,0 +1,13 @@
+bower_components/
+backend/node_modules/
+node_modules/
+dist/
+/app/rep/
+.idea
+.DS_Store
+*.sublime-workspace
+mvn_dist/
+tests/reports/
+npm-debug.log
+
+karma_html/
