@@ -2,6 +2,7 @@ class Library extends App then constructor: -> return [
   'ui.router'
   'templates'
   'library.login'
+  'library.catalog'
 ]
 
 class LibraryRunner extends Run
@@ -50,8 +51,5 @@ class LibraryInit extends Controller
   constructor: ($log) ->
     $log "[LibraryInit] : Library application starting"
 
-# Util factory
-class LibraryFactory extends Factory then constructor: ($log) ->
-  factory = {}
-  return factory
+
 

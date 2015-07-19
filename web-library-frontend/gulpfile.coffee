@@ -11,7 +11,7 @@ implementation_version = pkg.version+' (bt'+moment().format("YYYYMMDD_hhmmss")+'
 ngClassifyDefinitions = (file, options) ->
     ##for Unix
     return appName: 'library.login' if file.path.indexOf('components/login') isnt -1
-    return appName: 'library.catalg' if file.path.indexOf('components/catalog') isnt -1
+    return appName: 'library.catalog' if file.path.indexOf('components/catalog') isnt -1
     return appName: 'library'
 
 gutil      = require 'gulp-util'

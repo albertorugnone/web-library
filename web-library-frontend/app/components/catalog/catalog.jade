@@ -1,2 +1,36 @@
-div
-	| catalog!
+nav.navbar.navbar-inverse.navbar-fixed-top
+  .container
+    .navbar-header
+      a.navbar-brand(href='#/catalog') Web Library
+    #navbar
+      ul.nav.navbar-nav
+        li.active
+          a(href='#/catalog') catalog
+    // /.nav-collapse
+.container
+  h1
+  p.lead
+    | Lista Autori
+    table.table.table-striped
+        thead
+          tr
+            th Autore
+            th Età
+            th Nickname
+            th ID
+            th
+        tbody
+          tr(ng-repeat='author in authors')
+            td {{  author.name }}
+            td {{ author.age }}
+            td # - {{ author.id }}
+            td
+              button(ng-click='select(author)')
+                span.glyphicon.glyphicon-plus-sign(ng-hide='isSelected(author)')
+                span.glyphicon.glyphicon-minus-sign(ng-show='isSelected(author)')
+
+
+// /.container
+
+
+
