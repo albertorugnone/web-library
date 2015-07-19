@@ -35,13 +35,14 @@ class LibraryConfiguration extends Config
         url: '/login'
         views:
           'template':
-            controller: 'LibraryLogin'
+            controller: 'libraryLoginController'
             templateUrl: 'components/login/login.html'
 
       .state 'catalog',
         url: '/catalog'
         views:
           'template':
+            controller: 'libraryCatalogController'
             templateUrl: 'components/catalog/catalog.html'
 
 

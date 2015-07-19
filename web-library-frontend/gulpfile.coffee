@@ -36,7 +36,7 @@ gulp.task 'clean:dist', ->
 #protractor = require('gulp-protractor').protractor#
 paths = {}
 paths =
-  appCss    : ['./app/css/less/library.less']
+  appCss    : ['./app/css/**/*.less','./app/css/**/*.css' ]
   appJs     : ['./app/**/*.coffee','./app/**/*.js']
   img       : ['./app/**/*.png','./app/**/*.gif','./app/**/*.jpg']
   fonts     : ['./bower_components/bootstrap/fonts/*', './app/fonts/*']
