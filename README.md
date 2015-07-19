@@ -85,6 +85,7 @@ Da notare che comunque il disaccoppiamento tra frontend e backend ottenuto trami
 Il trasferimento dati adottato attualmente è json. E' possibile ottenere un'ottimizzazione del dato tramite compressione dello stesso (abilitazione gzip su web server)
 
 es su Apache .htaccess
+
     # compress text, html, javascript, css, xml:
     AddOutputFilterByType DEFLATE text/plain
     AddOutputFilterByType DEFLATE text/html
@@ -95,7 +96,6 @@ es su Apache .htaccess
     AddOutputFilterByType DEFLATE application/rss+xml
     AddOutputFilterByType DEFLATE application/javascript
     AddOutputFilterByType DEFLATE application/x-javascript
-
     # Or, compress certain file types by extension:
     <files *.html>
     SetOutputFilter DEFLATE
